@@ -1,9 +1,10 @@
 # Personal Portfolio Website in React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)
 
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="[https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png](https://github.com/jackclx/personal-website/assets/102727713/04c3f8aa-1928-46e1-955a-7ba41e402371)">
+<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src=![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)>
 
 Built using:
 
