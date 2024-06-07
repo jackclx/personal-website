@@ -1,8 +1,7 @@
 # Personal Portfolio Website in React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
+![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)
 
 Built using:
 
@@ -27,10 +26,5 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Build on Vercel App 
+Open [https://personal-website-bchb.vercel.app/](https://personal-website-bchb.vercel.app/) to view it in your browser. 
