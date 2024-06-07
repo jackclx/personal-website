@@ -3,9 +3,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)
 
-
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src=![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)>
-
 Built using:
 
 - Front-end library: React
