@@ -1,25 +1,31 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 
-export const Newsletter = ({ status, message, onValidated }) => {
+export const Newsletter = () => {
   const [email, setEmail] = useState('');
+  const [status, setStatus] = useState(null);
+  const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    if (status === 'success') clearFields();
-  }, [status])
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    email &&
-      email.indexOf("@") > -1 &&
-      onValidated({
-        EMAIL: email
-      })
-  }
-
-  const clearFields = () => {
-    setEmail('');
-  }
+    setStatus('sending');
+    let response = await fetch("https://personal-website-3xdn.vercel.app/api/newsletter", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify({ email }),
+    });
+    let result = await response.json();
+    if (result.code === 200) {
+      setStatus('success');
+      setMessage('Subscription confirmed. Thank you!');
+      setEmail('');
+    } else {
+      setStatus('error');
+      setMessage('Something went wrong, please try again later.');
+    }
+  };
 
   return (
     <Col lg={12}>
@@ -42,5 +48,5 @@ export const Newsletter = ({ status, message, onValidated }) => {
         </Row>
       </div>
     </Col>
-  )
-}
+  );
+};

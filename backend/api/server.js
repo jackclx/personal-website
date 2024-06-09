@@ -50,6 +50,38 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
+
+
+app.post('/api/newsletter', async (req, res) => {
+  if (req.method === 'POST') {
+    const { email } = req.body;
+
+    const newsletterEmail = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
+      },
+    });
+
+    const mail = {
+      from: process.env.EMAIL_USER,
+      to: email,
+      subject: "Thank you for subscribing to our newsletter",
+      html: `<p>Thank you for subscribing to our newsletter. We will keep you updated with the latest news and opportunities.</p>`,
+    };
+
+    try {
+      await newsletterEmail.sendMail(mail);
+      res.status(200).json({ code: 200, status: "Subscription Confirmed" });
+    } catch (error) {
+      res.status(500).json({ error });
+    }
+  } else {
+    res.status(405).json({ message: 'Method Not Allowed' });
+  }
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
