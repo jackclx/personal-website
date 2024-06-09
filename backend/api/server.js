@@ -67,8 +67,8 @@ app.post('/api/newsletter', async (req, res) => {
     const mail = {
       from: process.env.EMAIL_USER,
       to: email,
-      subject: "Thank you for subscribing to our newsletter",
-      html: `<p>Thank you for subscribing to our newsletter. We will keep you updated with the latest news and opportunities.</p>`,
+      subject: "Thank you for connecting with Jack",
+      html: `<p>Thank you for reaching out. I'm glad to discuss any opportunities or have a chat.</p>`,
     };
 
     try {

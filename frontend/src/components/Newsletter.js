@@ -18,8 +18,7 @@ export const Newsletter = () => {
     });
     let result = await response.json();
     if (result.code === 200) {
-      setStatus('success');
-      setMessage('Subscription confirmed. Thank you!');
+      setStatus('An email has been sent to you and might be in your spam folder. Thank you!');
       setEmail('');
     } else {
       setStatus('error');
