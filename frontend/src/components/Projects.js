@@ -24,7 +24,7 @@ export const Projects = () => {
     },
     {
       title: "pacKRages",
-      description: "Parcel Tracking Solutio, Best Presentaion Award",
+      description: "Parcel Tracking Solution, Best Presentaion Award",
       imgUrl: projImg3,
       url: "https://shorturl.at/uVBBb"
     },
