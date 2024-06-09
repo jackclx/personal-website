@@ -7,10 +7,12 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "animate.css": "^4.1.1",
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.1.3",
     "cors": "^2.8.5",
-    "express": "^4.18.1",
-    "nodemailer": "^6.7.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.8.2",
@@ -22,9 +24,9 @@
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
     "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -49,5 +51,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). ![photo_2024-06-07 22 50 09](https://github.com/jackclx/personal-website/assets/102727713/468afdd4-7e3c-4456-9d68-bc26e1867ffe)",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
