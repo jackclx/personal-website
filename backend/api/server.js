@@ -11,13 +11,13 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(cors({
-  origin: 'http://localhost:3000', // Allow only your frontend origin
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type']
-}));
+// app.use(cors({
+//   origin: 'http://localhost:3000', // Allow only your frontend origin
+//   methods: ['GET', 'POST'],
+//   allowedHeaders: ['Content-Type']
+// }));
 
-app.post('/contact', async (req, res) => {
+app.post('/api/contact', async (req, res) => {
   if (req.method === 'POST') {
     const { firstName, lastName, email, phone, message } = req.body;
 
@@ -50,7 +50,7 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
