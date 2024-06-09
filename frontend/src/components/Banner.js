@@ -57,7 +57,8 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
                   <h1>{`Welcome! I'm Jack`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Data Engineer", "Data Scientist", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>As a current first-class honors undergraduate studying at National University of Singapore major in Business Analytics and a proven track record in data engineering and software development, I excel in dynamic environments where I can combine my analytical skills with my love for technology and teamwork. As a former school football captain, I bring leadership, resilience, and a collaborative spirit to every project.</p>
+                  <p>
+                    As a first-class honors Business Analytics student at the National University of Singapore, I excel in combining analytical skills with technology and teamwork. With a proven record in data engineering and software development, I drive impactful solutions. As a former football captain, I bring leadership, resilience, and collaboration to every project.</p>
                   <button onClick={() => window.open('https://drive.google.com/file/d/10Tjpvc7TnPjJvgtewipgt8PVupUiilz2/view?usp=sharing', '_blank')}>
                     My Resume <ArrowRightCircle size={25} />
                   </button>

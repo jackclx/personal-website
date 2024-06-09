@@ -20,8 +20,6 @@ import hiking1 from "../assets/img/hiking1.jpeg";
 import hiking2 from "../assets/img/hiking2.jpeg";
 import hiking3 from "../assets/img/hiking3.jpeg";
 
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png";
 
 export const Hobby = () => {
@@ -34,8 +32,16 @@ export const Hobby = () => {
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: "linear",
-        nextArrow: <img src={arrow1} alt="arrow" />,
-        prevArrow: <img src={arrow2} alt="arrow" />
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     };
 
     const images = {
@@ -90,13 +96,11 @@ export const Hobby = () => {
                                     {renderCarousel(images.travel, 'travel')}
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
             <img className="background-image-left" src={colorSharp} alt="Image" />
         </section>
-
     );
 };

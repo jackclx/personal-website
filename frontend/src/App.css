@@ -268,6 +268,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+/* New CSS for mobile screens */
+@media only screen and (max-width: 768px) {
+  nav.navbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    /* Ensure horizontal layout */
+    justify-content: space-around;
+    /* Adjust spacing as needed */
+  }
+
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    padding: 10px 15px;
+    /* Adjust link padding for mobile */
+    font-size: 16px;
+    /* Adjust font size for mobile */
+  }
+
+  .navbar-text {
+    display: flex;
+    flex-direction: row;
+    /* Ensure horizontal layout */
+    align-items: center;
+    justify-content: space-between;
+    /* Adjust spacing as needed */
+    width: 100%;
+    /* Adjust width to ensure proper alignment */
+  }
+
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+    /* Ensure horizontal layout */
+    justify-content: center;
+    margin-left: 0;
+    /* Remove left margin to center align */
+  }
+
+  .navbar-text button {
+    padding: 12px 24px;
+    /* Adjust button padding for mobile */
+    font-size: 16px;
+    /* Adjust button font size for mobile */
+    margin-left: 10px;
+    /* Adjust spacing between buttons */
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+
+  /* Ensure the navbar-collapse is always shown */
+  .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items */
+  }
+}
+
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -276,6 +339,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 130px 0 50px 0;
+    background-position: center 58%;
+    background-size: contain;
+  }
+
 }
 
 .banner .tagline {
@@ -296,7 +368,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  min-height: 150px;
+  /* Adjust this value as needed */
 }
+
+@media only screen and (max-width: 767px) {
+  .banner h1 {
+    min-height: 270px;
+    /* Value for phones */
+  }
+}
+
 
 .banner p {
   color: #B8B8B8;
@@ -395,7 +477,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
@@ -542,7 +623,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* Media query for mobile devices */
+
+
+@media (max-width: 767px) {
+  .proj-imgbx {
+    width: calc(100% - 40px);
+    /* Adjusted to account for the margins */
+    height: calc(100% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
@@ -733,33 +827,77 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+  text-align: center;
 }
 
-/* styles.css */
+@media(max-width: 768px) {
+  .newsletter-bx {
+    padding: 40px 20px;
+    /* Adjust padding for mobile */
+    margin-top: -120px;
+    /* Adjust margin for mobile */
+  }
+
+  .newsletter-bx h3 {
+    font-size: 18px;
+    /* Adjust font size for mobile */
+    text-align: center;
+    /* Center-align text for mobile */
+  }
+
+  .new-email-bx {
+    flex-direction: column;
+    /* Stack elements vertically on mobile */
+  }
+
+  .new-email-bx input {
+    margin-bottom: 20px;
+    /* Add margin between input and button */
+  }
+
+  .new-email-bx button {
+    width: 100%;
+    /* Make button full-width on mobile */
+    height: 50px;
+    padding: 10px;
+  }
+}
+
+
+/* hobby css */
 .logo {
   width: 220px;
-  /* Adjust the size as needed */
   height: 150px;
   border-radius: 50%;
 }
 
 .hobby-image {
   max-height: 400px;
-  /* Adjust the height as needed */
   width: auto;
   object-fit: cover;
 }
 
-/* Add this to your CSS file */
 .white-link {
   color: white;
   text-decoration: none;
-  /* Optional: Remove underline */
 }
 
 .white-link:hover {
   color: white;
-  /* Ensure color stays white on hover */
+}
+
+/* Add this to adjust image sizes for mobile devices */
+@media (max-width: 768px) {
+  .hobby-image {
+    max-height: 200px;
+    /* Adjust the height as needed for mobile */
+    width: 100%;
+  }
+
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 
@@ -837,4 +975,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+  .internship-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .internship-content {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .internship-img {
+    width: 100%;
+    height: auto;
+  }
 }
