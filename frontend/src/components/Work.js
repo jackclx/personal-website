@@ -1,4 +1,5 @@
 import { Container } from "react-bootstrap";
+import gigspace from "../assets/img/gigspace.png";
 import intern1 from "../assets/img/intern1.jpeg";
 import intern2 from "../assets/img/intern2.jpeg";
 import intern3 from "../assets/img/intern3.jpeg";
@@ -9,6 +10,20 @@ import TrackVisibility from 'react-on-screen';
 export const Work = () => {
 
     const internships = [
+        {
+            title: "Founder of GigSpace",
+            description: (
+                <>
+                    - Founded a marketplace to connect event planners with freelancers.<br />
+                    - Led a team of 3 for web development and business development.<br />
+                    - Onboarded 100+ freelancers and a few leads.<br />
+                    - Won 2nd place in NUS Enterprise Pitch Night and 3rd place in SMU PitchIt 2024
+                </>
+            ),
+            imgUrl: gigspace,
+            date: "Aug 2024 - current",
+            url: "https://www.gigspace.sg"
+        },
         {
             title: "Data Engineer at SVTECH (NUS Overseas College Vietnam)",
             description: (

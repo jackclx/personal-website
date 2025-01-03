@@ -7,8 +7,8 @@ export const Newsletter = () => {
   const [message, setMessage] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus('sending');
+    e.preventDefault(); 
+    setStatus('sending'); 
     let response = await fetch("https://personal-website-3xdn.vercel.app/api/newsletter", {
       method: "POST",
       headers: {
